@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<!--コントローラーの設定 -->
+<AnchorPane fx:controller="com.Tsugaruweb.eventHandler.MainEventHandler" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TabPane id="MainTab" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="一番目の選択だよ">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ToolBar layoutX="280.0" layoutY="159.0" prefHeight="53.0" prefWidth="265.0">
+                  <contextMenu>
+                    <ContextMenu />
+                  </contextMenu>
+                  <items>
+                    <ProgressIndicator prefHeight="43.0" prefWidth="255.0" progress="0.0" />
+                  </items>
+                </ToolBar>
+                                  <!-- 追加されたイベント -->
+                <Button onAction = "#OkOnListener" layoutX="126.0" layoutY="158.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="129.0" text="Button">
+                  <contextMenu>
+                    <ContextMenu>
+                      <items>
+                        <MenuItem mnemonicParsing="false" text="未指定のアクション" />
+                        <Menu mnemonicParsing="false" text="未指定のメニュー">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="アクション1" />
+                          </items>
+                        </Menu>
+                      </items>
+                    </ContextMenu>
+                  </contextMenu>
+                  
+
+                </Button>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="２番目は気分で">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <Tab text="ここまでくると">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
